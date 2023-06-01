@@ -96,17 +96,17 @@ hr {
     }
 
     .intro img {
-        width: 150px;
+        width: 100px;
     }
 
     .intro-heading {
-        font-size: 2rem;
+        font-size: 1rem;
         margin-top: 20px;
         margin-bottom: 10px;
     }
 
     .intro-paragraph {
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 
     hr {

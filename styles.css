@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Montserrat&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #40514e;
+    font-family: 'Merriweather', serif;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #0b0909;
+    height: 600px;
+}
+
+.main-heading {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 2;
+    font-size: 3rem;
+}
+
+.main-paragraph {
+    font-family: 'Merriweather Sans', sans-serif;
+    letter-spacing: 3px;
+}
+
+.pro {
+    text-decoration: underline;
+}
+
+/* Intro Section */
+.intro {
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.intro-heading {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    line-height: 2;
+    color: #ef8172;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.intro-paragraph {
+    line-height: 2;
+    font-size: 1.2rem;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+hr {
+    margin: 100px auto;
+    width: 4%;
+    border: dotted #f5e5e3 6px;
+    border-bottom: none;
+}
+
+
+
+/* Responsiveness */
+@media (min-width:390px) and (max-width:823px) {
+
+    /* Main Section */
+    .main {
+        height: 300px;
+    }
+
+    .main img {
+        width: 130px;
+        height: 130px;
+    }
+
+    .main-heading {
+        font-size: 2rem;
+    }
+
+    .main-paragraph {
+        font-size: 1rem;
+    }
+
+    /* Intro Section */
+    .intro {
+        width: 90%;
+        margin: 50px auto;
+    }
+
+    .intro img {
+        width: 150px;
+    }
+
+    .intro-heading {
+        font-size: 2rem;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    .intro-paragraph {
+        font-size: 1rem;
+    }
+
+    hr {
+        margin: 50px auto;
+    }
+}
+
+
+/* Gradient Background Template */
+.gradient-background {
+    background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}

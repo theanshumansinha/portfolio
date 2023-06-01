@@ -16,8 +16,7 @@ body {
     justify-content: center;
     align-items: center;
     color: white;
-    background-color: #0b0909;
-    height: 600px;
+    height: 400px;
 }
 
 .main-heading {
@@ -73,7 +72,7 @@ hr {
 
     /* Main Section */
     .main {
-        height: 300px;
+        height: 250px;
     }
 
     .main img {
@@ -111,6 +110,16 @@ hr {
 
     hr {
         margin: 50px auto;
+    }
+}
+
+@media (min-width: 50px) and (max-width: 391px) {
+    .main {
+        min-width: 391px;
+    }
+
+    .intro {
+        min-width: 391px;
     }
 }
 
